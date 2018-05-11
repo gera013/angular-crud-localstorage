@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { TaskAddComponent } from './components/task-add/task-add.component';
 import { TaksListComponent } from './components/taks-list/taks-list.component';
 import { TaksComponent } from './components/taks/taks.component';
+import { DataService } from './services/data.service';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { TaksComponent } from './components/taks/taks.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
